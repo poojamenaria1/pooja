@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voting </title>
+	<script type="text/javascript">
+	var VoteA=0;
+	var VoteB=0;
+	function voteCandidateA()
+	{
+		VoteA=VoteA+1;
+		document.getElementById('c1').innerHTML= VoteA;
+	}
+	function voteCandidateB()
+	{
+		VoteB=VoteB+1;
+		document.getElementById('c2').innerHTML = VoteB;
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="voting.css">
+</head>
+<body >
+	<div>
+		<div class="a">
+			<p id="c1"></p>
+			<img id="i1" src="C:\Users\admin\Desktop\site\menar\Bird\BIRD.jpg" alt="image" height="250" width="250" align="center"><br/><br/><br/>
+			<div>
+				<button  type=" Vote White Bird" onclick="voteCandidateA()">Vote for A</button><br/><br/><br/><br/><br/>
+			</div>
+		</div>
+		<div class="b">
+			<p id="c2"></p>
+			<img id="i2" src="C:\Users\admin\Desktop\site\menar\Bird\Bkgd.jpg" alt="image" height="250" width="250"><br/><br/><br/>
+			<div>
+				<button type="Vote Red Bird" onclick="voteCandidateB()">Vote for B</button><br/><br/><br/><br/><br/>
+			</div>
+		</div>
+		<h3 id="p"> Design By:- <br/>
+		 Pooja Menaria </h3>
+</body>
+</html>
